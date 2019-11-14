@@ -2,7 +2,7 @@ import threading
 
 # Prof. Gustavo Wagner, gugawag@gmail.com
 # IFPB - Sistemas Operacionais
-# Explicacao: solucao classica para o problema do produtor-consumidor, com espera oculpada.
+# Explicacao: solucao classica para o problema do produtor-consumidor, com espera ocupada.
 #             Propensa a condicoes de disputa
 
 TAMANHO_BUFFER = 10
@@ -65,6 +65,7 @@ consumidor = Consumidor()
 
 t_produtor = threading.Thread(target=produtor.produzir)
 t_consumidor = threading.Thread(target=consumidor.consumir)
+
 
 t_produtor.start()
 t_consumidor.start()

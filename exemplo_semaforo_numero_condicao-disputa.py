@@ -15,7 +15,7 @@ def p1():
     global numero
     while True:
         numero += 1
-        time.sleep(0)  # usado apenas para forcar trocar contexto entre threads e visualizar condicao de disputa
+        time.sleep(1)  # usado apenas para forcar trocar contexto entre threads e visualizar condicao de disputa
         print('P1:', numero)
 
 
@@ -23,7 +23,7 @@ def p2():
     global numero
     while True:
         numero += 1
-        time.sleep(0)  # usado apenas para forcar trocar contexto entre threads e visualizar condicao de disputa
+        time.sleep(1)  # usado apenas para forcar trocar contexto entre threads e visualizar condicao de disputa
         print('P2:', numero)
 
 
