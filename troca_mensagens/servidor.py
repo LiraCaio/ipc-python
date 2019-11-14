@@ -9,5 +9,5 @@ udp.bind(orig)
 print('Servidor no ar...')
 while True:
     msg, cliente = udp.recvfrom(1024)  # quantidade de bytes que espera receber
-    print('Recebi de ', cliente, msg)
+    print('Recebi de ', cliente, msg.decode()) # decode = de bytes para string
 udp.close()
